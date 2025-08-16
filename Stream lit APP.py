@@ -32,7 +32,7 @@ if uploaded_file is not None:
     st.pyplot(fig)
 
     st.write("### t-SNE Visualization")
-    tsne = TSNE(n_components=2, random_state=42, perplexity=30, n_iter=500)
+    tsne = TSNE(n_components=2, random_state=42, perplexity=30, max_iter=500)
     tsne_result = tsne.fit_transform(data.values)
     tsne_df = pd.DataFrame(tsne_result, columns=["Dim1", "Dim2"], index=data.index)
 
@@ -56,3 +56,4 @@ if uploaded_file is not None:
 
 else:
     st.info("Please upload a CSV file to start.")
+
