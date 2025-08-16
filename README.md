@@ -8,6 +8,7 @@ Users can upload a gene expression matrix (CSV format) and generate PCA and t-SN
 - Dimensionality reduction using PCA and t-SNE
 - Clustering with k-means
 - Example dataset included for testing
+- Live Demo: https://single-cell-rna-seq-visualization-tool-5.streamlit.app/
 
 ## Project Structure
 AI-SingleCell-Visualization/
@@ -23,3 +24,4 @@ Clone this repository and install dependencies:
 git clone https://github.com/YourUsername/AI-SingleCell-Visualization.git
 cd AI-SingleCell-Visualization
 pip install -r requirements.txt
+
